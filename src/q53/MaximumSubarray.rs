@@ -30,7 +30,6 @@ pub fn maximum_subarray(arr : &mut [i32]) {
                 end = i;
             }
         }
-        println!("start:{}, end:{}, curSum:{}, maxSum:{}", start, end, curSum, maxSum);
     }
     println!("Maximum sum : {}", maxSum);
     print!("Explanation : [");
