@@ -1,3 +1,4 @@
+mod q1;
 mod q53;
 
 #[cfg(test)]
@@ -7,11 +8,15 @@ extern crate rand;
 mod tests {
     use rand::{self, Rng};
 
+    use q1::TwoSum;
     use q53::MaximumSubarray;
 
     #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
+    fn Q1_TowSum() {
+        let arr = [2,7,11,15];
+        let target = 22;
+
+        TwoSum::twosum(&arr, target);
     }
 
     #[test]
